@@ -31,6 +31,7 @@ def retrieve_books():
         
         # Return the list as json
         return jsonify(list_of_books)
+    
     except sqlite3.Error as error:
         print("Error while connecting to sqlite database", error)
 
