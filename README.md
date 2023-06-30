@@ -1,3 +1,3 @@
 # BookWorms
 
-Creating a fictiomal online bookstore
+Creating a fictional online bookstore
