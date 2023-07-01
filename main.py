@@ -70,4 +70,4 @@ def render_book_creation():
     return render_template('book_creation.html')
 # Running the app
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
