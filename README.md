@@ -5,6 +5,7 @@ Creating a fictional online bookstore
 ## Create a virtual environment
 ```bash
 python -m venv venv
+```
 
 ## Install Libraries
 ```bash
