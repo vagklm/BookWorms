@@ -49,7 +49,6 @@ def create_book():
         return jsonify({'error': 'Missing required fields'}), 400
     
     try:
-        #Connect to the 'books' database
         connection = sqlite3.connect('books.db')
         cursor = connection.cursor()
         
@@ -57,7 +56,6 @@ def create_book():
         cursor.execute("INSERT INTO books (title, author, price, description) VALUES (?, ?, ?, ?)",
                 (title, author, price, description))
 
-        # Commit changes and close the database
         connection.commit()
         connection.close()
     except sqlite3.Error as error:
